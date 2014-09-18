@@ -1,12 +1,14 @@
+// 客户端程序实现
+
 package main
 
 import (
-	//"bytes"
 	"fmt"
 	"net"
 	"os"
 )
 
+// 主程序入口
 func main() {
 	conn, err := net.Dial("tcp", "127.0.0.1:9999")
 	if err != nil {
